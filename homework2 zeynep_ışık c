@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <conio.h>
+#include <time.h>
+#include <stdlib.h>
+int main (){
+int total_gold=0;
+	int A[1000];
+ srand(time(NULL));
+ int i;
+ for(i=0;i<10;i++){
+ 	A[i]=1+rand()%9;
+ 	srand(time(NULL));
+ }
+srand(time(NULL));
+int e;
+int b;
+float total=0;
+for (b=1; b<432; b++){
+printf("previous city index \n",e);
+e=rand()%1000 ;
+printf("current city index\n",e);
+printf ("number of golds at the current city \n:",A[e]);
+total_gold-=A[e];
+A[e]=0;
+ printf("number of cities visited : %d\n",b);
+ printf("total gold : %d\n",total_gold);
+ printf("||||||||||||||||");
+ }
+}
